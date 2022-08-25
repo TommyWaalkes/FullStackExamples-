@@ -1,0 +1,22 @@
+<p>Look up Movie by Id</p>
+<input type="number" [(ngModel)]="id" />
+<button (click)="lookUpMovie()">Look up</button>
+
+<div *ngIf="movie.title !== ''">
+    <p>Title</p>
+    <input type="text" [(ngModel)]="movie.title" />
+
+    <p>Run Time</p>
+    <input type="number" [(ngModel)]="movie.runTime" />
+
+    <p>Description</p>
+    <input type="text" [(ngModel)]="movie.description" />
+
+    <p>Year</p>
+    <input type="number" [(ngModel)]="movie.year" />
+
+    <p>Lead Actor</p>
+    <input type="text" [(ngModel)]="movie.leadActor" />
+
+    <button (click)="UpdateMovie()">Update</button>
+</div>

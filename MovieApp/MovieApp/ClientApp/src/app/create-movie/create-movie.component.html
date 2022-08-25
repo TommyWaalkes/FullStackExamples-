@@ -1,0 +1,18 @@
+<h2>Create Movie</h2>
+
+<p>Title</p>
+<input type="text" [(ngModel)]="newMovie.title" />
+
+<p>Run Time</p>
+<input type="number" [(ngModel)]="newMovie.runTime" />
+
+<p>Year</p>
+<input type="number" [(ngModel)]="newMovie.year" />
+
+<p>Description</p>
+<input type="text" [(ngModel)]="newMovie.description" />
+
+<p>Lead Actor</p>
+<input type="text" [(ngModel)]="newMovie.leadActor" />
+
+<button (click)="CreateMovie()">Create</button>
